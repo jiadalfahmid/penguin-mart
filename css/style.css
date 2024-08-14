@@ -22,14 +22,14 @@ section{
 }
 
 .container{
-  max-width: 80%;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .logo{
   font-family: Poppins;
   font-size: 24px;
   font-weight: 700;
-  line-height: 120%;
 }
 
 .heading{
@@ -84,8 +84,67 @@ button{
   background: rgb(255, 251, 240);
 }
 
+bg2{
+  border-radius: 20px;
+  background: rgb(241, 241, 241);
+}
+
 .flex{
   display: flex;
 }
+
+.ds-hidden{
+  display: none;
+}
+
 /* global css ends */
 
+nav{
+  justify-content: space-between;
+  padding: 2.25rem 0;
+  align-items: center;
+}
+
+.logo-container{
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-container img{
+  width: 80px;
+}
+
+nav ul{
+  gap: 3rem;
+  width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:576px) {
+  .container{
+    max-width: 90%;
+  }
+  .mb-hidden{
+    display: none;
+  }
+  .ds-hidden{
+    display: block;
+  }
+}
