@@ -8,8 +8,8 @@ box-sizing: border-box;
 list-style: none; 
 text-decoration: none;
 
-/* outline: 1px solid red;
-outline-offset: -1px; */
+outline: 1px solid red;
+outline-offset: -1px;
 }
 
 body{
@@ -18,7 +18,6 @@ body{
 
 section{
   scroll-snap-align: start;
-  height: 100vh;
 }
 
 .container{
@@ -63,6 +62,7 @@ section{
   font-size: 16px;
   font-weight: 400;
   line-height: 120%;
+  margin-bottom: 2rem;
 }
 
 button{
@@ -72,8 +72,10 @@ button{
   font-weight: 500;
   border-radius: 10px;
   border: none;
+  text-transform: uppercase;
   padding: 18px 32px;
-  background: linear-gradient(180.00deg, rgb(188, 166, 70),rgb(250, 190, 76) 100%);
+  cursor: pointer;
+  background: linear-gradient(0.00deg, rgb(204, 167, 4),rgb(250, 190, 76) 100%);
 }
 
 .brand{
@@ -116,7 +118,23 @@ nav{
 
 nav ul{
   gap: 3rem;
-  width: 50%;
+}
+
+.banner{
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 3%;
+}
+
+.banner-text p{
+  max-width: 70%;
+}
+
+.banner-img{
+  width: 40%;
+}
+.banner-img img{
+  width: 100%;
 }
 
 
@@ -146,5 +164,15 @@ nav ul{
   }
   .ds-hidden{
     display: block;
+  }
+  .heading{
+    font-size: 57px;
+  }
+  .banner{
+    flex-direction: column;
+  }
+  .banner-img{
+    margin-top: 3rem;
+    width: 100%;
   }
 }
